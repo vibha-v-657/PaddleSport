@@ -1,0 +1,57 @@
+﻿@model Hackathon_Internship.Models.Reservation
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.cust_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cust_id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.total_time)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.total_time)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.total_amt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.total_amt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.availability.field_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.availability.field_id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.court.court_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.court.court_name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.res_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

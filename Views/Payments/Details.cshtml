@@ -1,0 +1,41 @@
+﻿@model Hackathon_Internship.Models.Payment
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Amount
+        </dt>
+
+        <dd>
+            Amount
+        </dd>
+
+        <dt>
+           Customer
+        </dt>
+
+        <dd>
+            Customer
+        </dd>
+
+        <dt>
+            Reservation
+        </dt>
+
+        <dd>
+            Reservation
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.pid }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Hackathon_Internship.Models.availability>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            START TIME
+        </th>
+        <th>
+            BOOKED
+        </th>
+        <th>
+            FIELD NO.
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.start_time)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.booked)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.avl_field.field_id)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.field_id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.field_id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.field_id })
+        </td>
+    </tr>
+}
+
+</table>

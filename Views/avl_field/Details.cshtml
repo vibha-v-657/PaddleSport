@@ -1,0 +1,34 @@
+﻿@model Hackathon_Internship.Models.avl_field
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Field
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.field_id)
+
+        </dd>
+
+        <dt>
+            Court Name
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.court.court_name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.field_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

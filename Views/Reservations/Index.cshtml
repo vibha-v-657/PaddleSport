@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Hackathon_Internship.Models.Reservation>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.cust_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.total_time)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.total_amt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.availability.field_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.court.court_name)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.cust_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.total_time)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.total_amt)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.availability.field_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.court.court_name)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.res_id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.res_id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.res_id })
+        </td>
+    </tr>
+}
+
+</table>

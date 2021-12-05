@@ -1,0 +1,55 @@
+﻿@model Hackathon_Internship.Models.court
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Court Name
+        </dt>
+
+        <dd>
+            Court Name
+        </dd>
+
+        <dt>
+            Location
+        </dt>
+
+        <dd>
+            Location
+        </dd>
+
+        <dt>
+            Number of Courts
+        </dt>
+
+        <dd>
+            Number of Courts
+        </dd>
+
+        <dt>
+            Cost
+        </dt>
+
+        <dd>
+            Cost
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-danger btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

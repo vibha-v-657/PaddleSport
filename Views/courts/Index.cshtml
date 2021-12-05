@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Hackathon_Internship.Models.court>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Court Name
+        </th>
+        <th>
+            Location
+        </th>
+        <th>
+            Number of Courts
+        </th>
+        <th>
+            Cost
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.court_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.location)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.num_of_courts)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cost)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.court_id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.court_id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.court_id })
+        </td>
+    </tr>
+}
+
+</table>

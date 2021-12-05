@@ -1,0 +1,39 @@
+﻿@model Hackathon_Internship.Models.availability
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+START TIME        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.start_time)
+        </dd>
+
+        <dt>
+            BOOKED
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.booked)
+        </dd>
+
+        <dt>
+FIELD NO.        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.avl_field.field_id)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.field_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fb0195f05c324609b6d212b7496316bb" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="defaultConnectionModel.C__MigrationHistory" Width="1.5" PointX="13.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="defaultConnectionModel.AspNetRole" Width="1.5" PointX="9" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="defaultConnectionModel.AspNetUserClaim" Width="1.5" PointX="13.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="defaultConnectionModel.AspNetUserLogin" Width="1.5" PointX="11.375" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="defaultConnectionModel.AspNetUser" Width="1.5" PointX="11.625" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="defaultConnectionModel.availability" Width="1.5" PointX="5.25" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="defaultConnectionModel.avl_field" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="defaultConnectionModel.court" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="defaultConnectionModel.Payment" Width="1.5" PointX="9.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="defaultConnectionModel.Reservation" Width="1.5" PointX="7.5" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="defaultConnectionModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="defaultConnectionModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="defaultConnectionModel.FK_availability_" ManuallyRouted="false" />
+        <AssociationConnector Association="defaultConnectionModel.FK_Reservation_field" ManuallyRouted="false" />
+        <AssociationConnector Association="defaultConnectionModel.FK_a" ManuallyRouted="false" />
+        <AssociationConnector Association="defaultConnectionModel.FK_loc" ManuallyRouted="false" />
+        <AssociationConnector Association="defaultConnectionModel.FK_P" ManuallyRouted="false" />
+        <AssociationConnector Association="defaultConnectionModel.AspNetUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
